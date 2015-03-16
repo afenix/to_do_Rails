@@ -32,6 +32,15 @@ class ListsController <ApplicationController
       end
     end
 
+  # def destroy
+  #   @list = List.find(params[:id])
+  #   if @list.destroy(params[:list])
+  #     redirect_to lists_path
+  #   else
+  #     render :new
+  #   end
+  # end
+
   def show
     @list = List.find(params[:id])
     render :show
